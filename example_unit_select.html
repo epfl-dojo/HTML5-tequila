@@ -1,0 +1,73 @@
+    <html>
+      <head>
+        <title>Login pour le service Distrilog</title>
+        <link rel="stylesheet" href="/styles/tequila.css"/>
+        <script language="JavaScript" src="/js/tequila.js"></script>
+        <script language="JavaScript" src="/js/keyboard.js"></script>
+      </head>
+      <body>
+  
+    <table width="100%" height="100%"><tr><td valign="middle">
+    <form action="https://tequila.epfl.ch/cgi-bin/tequila/login" method="POST">
+      <input type="hidden"
+               id="requestkey"
+             name="requestkey"
+            value="nh0opj7ig6n0ln8m8gt1v7whjq7jtnc7">
+  
+      <input type="hidden" name="identitychosen" value="1">
+      <table border cellspacing="0" align="center" cellpadding="5">
+        <tr>
+          <td bgcolor="#CCCCCC">
+            <table width="100%">
+              <tr>
+                <td>
+                  <img src="/images/EPFL.gif"
+                       alt="EPFL">
+                </td>
+                <td bgcolor="#CCCCCC" align="right">
+                  Login pour le service <b>Distrilog</b>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>  
+        <tr>
+          <td align="center"> 
+            <table width="98%" cellspacing="0" bgcolor="white">
+              <tr>
+                <td width="219">
+                  <img src="/images/eye.gif" width="200" height="270">
+                </td>
+                <td width="400">
+                  <h4>Il y a plusieurs comptes correspondant à ce username Choisissez celui que vous désirez utiliser :</h4>
+                  <select name="selectidentity">
+  
+      <option value="username">
+        Firstname Lastname (unit1)
+      </option>
+    
+      <option value="username@unit2">
+        Firstname Lastname (unit2)
+      </option>
+    
+      <option value="username@unit3">
+        Firstname Lastname (unit3)
+      </option>
+    
+                  </select>
+                  <input type="submit" value="OK" id="OK">
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+      </form>
+    </td></tr></table>
+    <script type="text/javascript" language="JavaScript">
+      document.getElementById ('OK').focus ();
+    </script>
+  
+      </body>
+    </html>
+  
