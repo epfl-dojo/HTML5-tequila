@@ -1,0 +1,242 @@
+    <html>
+      <head>
+        <title>Login pour le service gaspar</title>
+        <link rel="stylesheet" href="/styles/tequila.css"/>
+        <script language="JavaScript" src="/js/tequila.js"></script>
+        <script language="JavaScript" src="/js/keyboard.js"></script>
+      </head>
+      <body>
+  
+    <script>
+       curlang = 'fr';
+            me = '/cgi-bin/tequila';
+       certurl = 'https://tequila.epfl.ch/cgi-bin/tequilac/login';
+  
+    </script>
+    <table width="100%" height="100%" id="wholeauthform">
+      <tr>
+        <td valign="middle" id="all">
+          
+    <div id="servdesc" style="display: none; position: absolute; top: 100px; left: 200px; width: 350px; height: 300px; border-color: #CCCCCC; margin: 10px; border-style: solid; background-color: lightyellow;">
+      <h3>&nbsp; Service description :</h3>
+      <blockquote>
+        <table border width="100%" cellpadding="3">
+          <tr><th align="right">         Name </th><td> gaspar    </td></tr>
+          <tr><th align="right">      Contact </th><td> Unknown    </td></tr>
+          <tr><th align="right">     Checking </th><td> Anonymous      </td></tr>
+          <tr><th align="right"> Service host </th><td> 128.179.187.126 </td></tr>
+          <tr>
+            <th align="right">
+              This service is willing to know the following information
+              about yourself.
+            </th>
+            <td>
+              Nom<br>Prénom<br>Sciper<br>Email
+            </td>
+          </tr>
+        </table>
+      </blockquote>
+      <div align="center">
+        <input type="reset" value="OK" onclick="swapservdesc(event);">
+      </div>
+    </div>
+    <script type="text/javascript" language="JavaScript">
+      function swapservdesc (event) {
+        if (!event) event = window.event;
+        var  div = document.getElementById ('servdesc');
+        if (div.style.display == 'none') {
+          var posx = event.pageX;
+          var posy = event.pageY;
+          div.style.top  = posy;
+          div.style.left = posx - 150;
+          div.style.display = 'block';
+        } else {
+          div.style.display = 'none';
+        }
+      }
+    </script>
+  
+          <table border="1" cellspacing="0" align="center" cellpadding="5">
+            <tr>
+              <td bgcolor="#CCCCCC">
+                <table width="100%">
+                  <tr>
+                    <td>
+                      <img src="/images/EPFL.gif"
+                           alt="EPFL">
+                    </td>
+                    <td bgcolor="#CCCCCC" align="right">
+                      <table>
+                        <tr>
+                          
+                          <td>
+                            <div>
+                              <span name="en:title" style="display: none">Login for the service</span><span name="fr:title" style="display: inline">Login pour le service</span><span name="de:title" style="display: none">Login für den Dienst</span>
+                              <br>
+                              <div style="font-weight: bold;"
+                                   onclick="swapservdesc(event)">
+                                gaspar
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+
+            
+
+            <tr>
+              <td align="center"> 
+                <table width="98%" cellspacing="0" bgcolor="white">
+                  <tr>
+                    <td width="219">
+                      <img src="/images/eye.gif" width="200" height="270">
+                    </td>
+                    <td align="right"> 
+  
+    <div style="
+                 width: 500px;
+            text-align: left;
+          border-width: 3px;
+          border-style: ridge;
+          padding-left: 10px;
+          border-color: #EEEEFF;
+      background-color: #EEEEFF;
+    ">
+    <form   name="loginform"
+              id="loginform"
+          action="https://tequila.epfl.ch/cgi-bin/tequila/login"
+          method="POST">
+      <input type="hidden"
+               id="requestkey"
+             name="requestkey"
+            value="23zuifn8opeotaye6oe0uxz5zwqf55mk">
+  
+    <table width="400" bgcolor="#EEEEFF">
+      <tr>
+        <td align="middle">
+          <table width="100%" cellspacing="0" cellpadding="2">
+            <tr> 
+              <td width="150" align="right">
+                <strong><span name="en:username" style="display: none">Username</span><span name="fr:username" style="display: inline">Username</span><span name="de:username" style="display: none">Benutzername</span>&nbsp;</strong>
+              </td>
+              <td align="left" valign="middle"> 
+                <input type="text" name="username" id="username"
+                       value="" size="30"
+                       style="background-color:#EEEEFF;"
+                       autocomplete="on">
+              </td>
+            </tr>
+
+            <tr> 
+              <td width="150" align="right">
+                <b><span name="en:password" style="display: none">Password</span><span name="fr:password" style="display: inline">Mot de passe</span><span name="de:password" style="display: none">Passwort</span>&nbsp;</b>
+              </td>
+              <td align="left"> 
+                <input type="password" name="password" id="password" size="30"
+                       style="background-color:#EEEEFF;"
+                       autocomplete="on">
+              </td>
+            </tr>
+  
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <table cellspacing="0" cellpadding="0" width="100%">
+            <tr>
+              <td align="middle">
+  
+              <a href="https://tequila.epfl.ch/cgi-bin/tequilac/login?requestkey=23zuifn8opeotaye6oe0uxz5zwqf55mk">
+                <img src="/images/seccert.gif" border="0" alt="SSL certificate"></a>
+  
+                    <input id="loginbutton"
+                         name="login"
+                        style="display: inline;"
+                         type="image"
+                          src="/images/glogin.gif"
+                       border="0">
+                    <a href="/tequila/help?language=fr">
+                      <img src="/images/ghelp.gif" border="0" alt="aide">
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </form>
+      </div>
+      <p>
+  
+                  </td>
+                </tr>
+              </table>
+  
+            </tr>
+            <tr>
+              <td colspan="2">
+                <table width="100%">
+                  <tr>
+  
+                    <td>
+                      <div id="keyboard" style="display: none">
+                        <img id="keyboardimg"
+                             src="/images/keyboard_min.gif"
+                             onclick="insertchar(event);"
+                             title="Software keyboard"/>
+                        <script type="text/javascript" language="JavaScript">
+                          setfocustrap ();
+                          //document.getElementById ('password').focus ();
+                        </script>
+                        </div>
+                        <div id="minikbd" style="display: block">
+                          <img src="/images/minikbd.jpg"
+                               onclick="swapkeyboard ();">
+                        </div>
+                      </td>
+  
+            <td align="right">
+  [<a href="#" onclick="swaplanguage ('en');">English</a>]
+[<a href="#" onclick="swaplanguage ('fr');">Français</a>]
+[<a href="#" onclick="swaplanguage ('de');">Deutsch</a>]
+
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </form>
+        </td>
+      </tr>
+    </table>
+    <script type="text/javascript" language="JavaScript">
+      function addfragment (form, fragment) {
+        var   input = document.createElement ('input');
+        input.type  = 'hidden';
+        input.name  = 'fragment';
+        input.value = fragment;
+        form.appendChild (input);          
+      }
+      var href = document.location.href;
+      var frag = null;
+      if (match = href.match (/\#(.*)$/)) { // fragment
+        frag = match [1];
+      }
+      if (document.loginform) {
+        if (frag) {
+          addfragment (document.loginform, frag);
+        }
+        document.loginform.username.focus ();
+      }
+    </script>  
+  
+      </body>
+    </html>
+  
