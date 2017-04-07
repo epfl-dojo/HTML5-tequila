@@ -1,0 +1,37 @@
+.container {
+  display: flex; /* or inline-flex */
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  background: pink;
+}
+
+
+.box {
+  border: 1px solid blue;
+}
+.box_content {
+  border: 1px solid yellow;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+.box_content .box_image {
+  background-image: url(https://tequila.epfl.ch/images/eye.gif);
+  height: 270px;
+  width: 200px;
+  color: transparent;  // Keep text for blind people
+}
+
+.form {
+  background-color: yellow;
+  display: flex; /* or inline-flex */
+  flex-direction: column ;
+
+
+
+
+}

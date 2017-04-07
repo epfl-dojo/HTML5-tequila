@@ -6,17 +6,17 @@
         <script language="JavaScript" src="/js/keyboard.js"></script>
       </head>
       <body>
-  
+
     <script>
        curlang = 'fr';
             me = '/cgi-bin/tequila';
        certurl = 'https://tequila.epfl.ch/cgi-bin/tequilac/login';
-  
+
     </script>
     <table width="100%" height="100%" id="wholeauthform">
       <tr>
         <td valign="middle" id="all">
-          
+
     <div id="servdesc" style="display: none; position: absolute; top: 100px; left: 200px; width: 350px; height: 300px; border-color: #CCCCCC; margin: 10px; border-style: solid; background-color: lightyellow;">
       <h3>&nbsp; Service description :</h3>
       <blockquote>
@@ -55,7 +55,7 @@
         }
       }
     </script>
-  
+
           <table border="1" cellspacing="0" align="center" cellpadding="5">
             <tr>
               <td bgcolor="#CCCCCC">
@@ -68,7 +68,7 @@
                     <td bgcolor="#CCCCCC" align="right">
                       <table>
                         <tr>
-                          
+
                           <td>
                             <div>
                               <span name="en:title" style="display: none">Login for the service</span><span name="fr:title" style="display: inline">Login pour le service</span><span name="de:title" style="display: none">Login für den Dienst</span>
@@ -87,17 +87,17 @@
               </td>
             </tr>
 
-            
+
 
             <tr>
-              <td align="center"> 
+              <td align="center">
                 <table width="98%" cellspacing="0" bgcolor="white">
                   <tr>
                     <td width="219">
                       <img src="/images/eye.gif" width="200" height="270">
                     </td>
-                    <td align="right"> 
-  
+                    <td align="right">
+
     <div style="
                  width: 500px;
             text-align: left;
@@ -115,16 +115,16 @@
                id="requestkey"
              name="requestkey"
             value="23zuifn8opeotaye6oe0uxz5zwqf55mk">
-  
+
     <table width="400" bgcolor="#EEEEFF">
       <tr>
         <td align="middle">
           <table width="100%" cellspacing="0" cellpadding="2">
-            <tr> 
+            <tr>
               <td width="150" align="right">
                 <strong><span name="en:username" style="display: none">Username</span><span name="fr:username" style="display: inline">Username</span><span name="de:username" style="display: none">Benutzername</span>&nbsp;</strong>
               </td>
-              <td align="left" valign="middle"> 
+              <td align="left" valign="middle">
                 <input type="text" name="username" id="username"
                        value="" size="30"
                        style="background-color:#EEEEFF;"
@@ -132,17 +132,17 @@
               </td>
             </tr>
 
-            <tr> 
+            <tr>
               <td width="150" align="right">
                 <b><span name="en:password" style="display: none">Password</span><span name="fr:password" style="display: inline">Mot de passe</span><span name="de:password" style="display: none">Passwort</span>&nbsp;</b>
               </td>
-              <td align="left"> 
+              <td align="left">
                 <input type="password" name="password" id="password" size="30"
                        style="background-color:#EEEEFF;"
                        autocomplete="on">
               </td>
             </tr>
-  
+
           </table>
         </td>
       </tr>
@@ -151,10 +151,10 @@
           <table cellspacing="0" cellpadding="0" width="100%">
             <tr>
               <td align="middle">
-  
+
               <a href="https://tequila.epfl.ch/cgi-bin/tequilac/login?requestkey=23zuifn8opeotaye6oe0uxz5zwqf55mk">
                 <img src="/images/seccert.gif" border="0" alt="SSL certificate"></a>
-  
+
                     <input id="loginbutton"
                          name="login"
                         style="display: inline;"
@@ -173,17 +173,17 @@
       </form>
       </div>
       <p>
-  
+
                   </td>
                 </tr>
               </table>
-  
+
             </tr>
             <tr>
               <td colspan="2">
                 <table width="100%">
                   <tr>
-  
+
                     <td>
                       <div id="keyboard" style="display: none">
                         <img id="keyboardimg"
@@ -200,7 +200,7 @@
                                onclick="swapkeyboard ();">
                         </div>
                       </td>
-  
+
             <td align="right">
   [<a href="#" onclick="swaplanguage ('en');">English</a>]
 [<a href="#" onclick="swaplanguage ('fr');">Français</a>]
@@ -222,7 +222,7 @@
         input.type  = 'hidden';
         input.name  = 'fragment';
         input.value = fragment;
-        form.appendChild (input);          
+        form.appendChild (input);
       }
       var href = document.location.href;
       var frag = null;
@@ -235,8 +235,7 @@
         }
         document.loginform.username.focus ();
       }
-    </script>  
-  
+    </script>
+
       </body>
     </html>
-  
