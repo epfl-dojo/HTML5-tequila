@@ -3,6 +3,13 @@
 Refaire la page Tequila (HTML1) en HTML5.
 Faire bouger la fenêtre de login en cas d'échec
 
+Page d'origine:
+
+https://tequila.epfl.ch/cgi-bin/tequila/loginform?
+
+
+
+
 
 Techno utilisées:
 
