@@ -6,6 +6,6 @@ Faire bouger la fenêtre de login en cas d'échec
 
 Techno utilisées:
 
-https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/<br>
 https://kyusuf.com/post/almost-complete-guide-to-flexbox-without-flexbox
 
